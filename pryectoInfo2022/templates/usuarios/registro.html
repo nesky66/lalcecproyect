@@ -2,13 +2,13 @@
 {% load static %}
 
 {% block content %}
-{% load crispy_forms_tags %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
 
 <form method="POST" action="" >{% csrf_token %}
 
 
     <div style="width:50%; margin:auto;">
-        {{form|crispy}}
+        {{form}}
         <button type="submit" class="btn btn-success">Registro</button>
     </div>
 </form>

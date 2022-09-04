@@ -50,8 +50,8 @@ INSTALLED_APPS = [
     # 'apps.usuarios.apps.UsuariosConfig',
     'apps.post',
     'apps.contacto',
-    'bootstrap5',
-    'crispy_forms',
+    # 'bootstrap5',
+    # 'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -165,7 +165,7 @@ EMAIL_PORT=587
 EMAIL_HOST_USER="nesky66.gmail.com"
 EMAIL_HOST_password="sys64738"
 
-CRISPY_TEMPLATE_PACK='bootstrap4'
+# CRISPY_TEMPLATE_PACK='bootstrap4'
 
 
 DEBUG = True
