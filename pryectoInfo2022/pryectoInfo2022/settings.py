@@ -87,12 +87,12 @@ WSGI_APPLICATION = 'pryectoInfo2022.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -130,7 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
@@ -170,13 +170,13 @@ ALLOWED_HOSTS = []
 # Hacer pip install msqlclient dentro del entorno
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-        'NAME': 'lalcec', 
-        'USER': 'postgres',
-        'PASSWORD': 'sys64738', 
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+#         'NAME': 'lalcec', 
+#         'USER': 'postgres',
+#         'PASSWORD': 'sys64738', 
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
