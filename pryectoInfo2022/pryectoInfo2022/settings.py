@@ -169,7 +169,7 @@ EMAIL_HOST_password="sys64738"
 
 
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nesky66.pythonanywhere.com']
 # Hacer pip install msqlclient dentro del entorno
 
 
