@@ -38,6 +38,9 @@ urlpatterns = [
     path('canpiel/',views.canpiel,name='canpiel'),
     path('canhab/',views.canhab,name='canhab'),
     path('profesionales/',views.profesionales,name='profesionales'),
-]
+] 
+
+
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
